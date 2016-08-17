@@ -12,7 +12,6 @@ exports.FacebookScraper = class FacebookScraper extends BaseScraper
   # does actually check the status though.
 
   constructor: (opts) ->
-    @auth = opts.auth
     super opts
 
   # ---------------------------------------------------------------------------
@@ -58,7 +57,6 @@ exports.FacebookScraper = class FacebookScraper extends BaseScraper
     @log "| HTTP request for URL '#{url}'"
     args =
       url : url
-      auth : @auth
     args.json = 1 if json
     @_get_url_body args, cb
 
