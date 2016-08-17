@@ -28,7 +28,7 @@ exports.FacebookScraper = class FacebookScraper extends BaseScraper
 
   hunt2 : ({username, proof_text_check, name}, cb) ->
     err = new Error "hunt2 is a no-op for Facebook"
-    cb err, null
+    cb err, {}
 
   # ---------------------------------------------------------------------------
 
