@@ -323,6 +323,7 @@ class HackerNewsBinding extends SocialNetworkBinding
 #==========================================================================
 
 exports.TwitterBinding = TwitterBinding
+exports.FacebookBinding = FacebookBinding
 exports.RedditBinding = RedditBinding
 exports.KeybaseBinding = KeybaseBinding
 exports.GithubBinding = GithubBinding
